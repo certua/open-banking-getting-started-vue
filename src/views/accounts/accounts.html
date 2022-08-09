@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h2>Accounts</h2>
+      <routerLink to="/connect">
+        <button class="btn btn-primary float-end">Add Account</button>
+      </routerLink>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10">
+      <certua-ob-institution-management
+        :apiConfig="apiConfig"
+        askConsentOnRefresh="true"
+        showRefreshAllButton="true"
+        successUrl="http://c51d-54-76-172-136.eu.ngrok.io/success"
+        failureUrl="http://c51d-54-76-172-136.eu.ngrok.io/failure"
+      ></certua-ob-institution-management>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <routerLink to="/Start">
+        <button class="btn btn-link">Go to Start</button>
+      </routerLink>
+    </div>
+  </div>
+</div>

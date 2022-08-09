@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <h2>Connect an account</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10">
+      <certua-ob-institution-selection
+        :apiConfig="apiConfig"
+        successUrl=" http://8261-54-76-172-136.eu.ngrok.io/refresh/success"
+        failureUrl=" http://8261-54-76-172-136.eu.ngrok.io/refresh/failure"
+      ></certua-ob-institution-selection>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <routerLink to="/accounts">
+        <button class="btn btn-link">Cancel</button>
+      </routerLink>
+    </div>
+  </div>
+</div>
